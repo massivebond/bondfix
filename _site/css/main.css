@@ -2,12 +2,10 @@
  * Reset some basic elements
  */
 html {
-  background: #fff;
-  padding: 20px; }
+  background: #fff; }
 
 body {
   background: #fff;
-  padding: 20px;
   margin: 0 auto;
   max-width: 920px;
   border-radius: 8px; }
@@ -263,7 +261,6 @@ pre {
   font-size: 24px; }
 
 #body {
-  padding: 10px;
   padding-bottom: 60px;
   /* Height of the footer */ }
 
@@ -277,7 +274,6 @@ footer {
   text-align: center;
   font-size: 18px;
   display: inline-block;
-  margin-left: 10px;
   min-width: 200px;
   white-space: nowrap; }
 
