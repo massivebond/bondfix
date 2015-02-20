@@ -2,25 +2,25 @@
  * Site header
  */
 .site-header {
-    border-top: 1px solid #424242;
-    border-bottom: 1px solid $grey-color-light;
+    border-bottom: 1px solid $grey-color;
     min-height: 56px;
-
+    margin-bottom: 55px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
+    color: #8C9595;
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+    text-decoration: none;
+    transition:1s;
 }
+
+a:hover { color:#000; }
 
 .site-nav {
     font-size: 26px;
@@ -28,17 +28,20 @@
     line-height: 56px;
     .menu-icon {
         display: none;
-    }
+}
 
     .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
+    text-decoration: none;
+    transition:1s;
+    color: $text-color;
+    line-height: $base-line-height;
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
         }
     }
+    
+    a:hover { color:#000; }
 
     @include media-query($on-palm) {
         position: absolute;
@@ -106,11 +109,31 @@
     }
 }
 
-
-
 /**
  * Page content
  */
+
+ #topbar { 
+ 	font-size: 14px;
+ 	width: 100%;
+ }
+
+ #topbar h1 { text-align: left; margin: auto; font-family: Droid Sans; font-size: 30px; }
+ #topbar h2 { margin-top: -10px; font-family: Droid Sans; font-size: 22px; }
+
+ #restitle {
+ 	font-family: Droid Sans;
+ 	margin-bottom: 15px;
+ }
+
+ #restitle h2 { margin: auto; font-family: Droid Sans; font-size: 35px; color: #4A4E4E; }
+ #restitle p {  text-align: left; margin: auto; font-family: Droid+Sans; font-size: 25px; }
+
+ #job p { text-align: left; margin: auto; font-family: Droid+Sans; }
+ #job h2 { font-size: 25px; min-width: 500px; color: #6C7070; }
+ #job h3 { font-weight: bold; font-size: 18px; display: inline; color: #6C7070; white-space: nowrap }
+ #job span { float: right; font-size: 25px; color: #6C7070; }
+
 
 .page-heading {
     font-size: 20px;
@@ -139,6 +162,101 @@
    padding-bottom:60px;   /* Height of the footer */
 }
 
+
+/* SOCIAL LINKS */
+
+@font-face {
+    font-family: 'si';
+    src: url('../icon/socicon.eot');
+    src: url('../icon/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../icon/socicon.woff') format('woff'),
+         url('../icon/socicon.ttf') format('truetype'),
+         url('../icon/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:show;
+    list-style:none;
+	white-space: nowrap;
+	background: #424242;
+	height: 1px;
+	width: 335px;
+}
+
+.soc ul {
+	height: 50px;
+	line-height: -55px;
+    list-style:none;
+	float: left;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    transition:.1s;
+    transition-property: transform;
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 15px;
+    margin: 12px;
+    color: #e3e3e3;
+    background-color: none;
+}
+
+.soc a:hover {
+    z-index: 2;
+    transform: scale(1.1);
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'b';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'c';
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'j';
+}
+
 footer{position:absolute;left:0;bottom:0;width:100%}
 
 #para{
@@ -147,4 +265,5 @@ font-size: 18px;
 display: inline-block;
 min-width: 200px;
 white-space: nowrap;
+margin-left: 30px;
 }

@@ -1,14 +1,13 @@
 /**
  * Reset some basic elements
  */
- html { background: #fff; }
- body { background: #fff; margin: 0 auto; max-width: 920px; border-radius: 8px; }
+ 
+ html { background: #fff; padding: 10px; }
+ body { background: #fff; padding: 10px; margin: 0 auto; max-width: 950px; border-radius: 8px; font-family: Droid Sans; }
  h1,p { text-align: center; font-family: helvetica; padding-bottom: 20px; }
- p { text-align: left; font-size: 18px} p, a { color: #585858; }
+ p { text-align: left; font-size: 18px} p, a { color: #8C9595; }
  hr { height: 0; background: none; border: none; border-bottom: 1px solid #ddd; margin: 10px 0; }
- body { font-family: Droid Sans; color: #585858; margin: 0px; }
  li { font-size: 18px }
-
 
 
 /**
@@ -19,7 +18,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: $text-color;
+    color: #8C9595;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -85,25 +84,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
-}
-
-
+/** 
+  * Links
+  */
 
 /**
  * Blockquotes
