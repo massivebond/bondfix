@@ -3,9 +3,9 @@
  */
  
  html { background: #fff; padding: 10px; }
- body { background: #fff; padding: 10px; margin: 0 auto; max-width: 950px; border-radius: 8px; font-family: Droid Sans; }
- h1,p { text-align: center; font-family: helvetica; padding-bottom: 20px; }
- p { text-align: left; font-size: 18px} p, a { color: #8C9595; }
+ body { background: #fff; padding: 10px; margin: 0 auto; max-width: 950px; border-radius: 8px; font-family: $base-font-family; }
+ h1,p { text-align: center; font-family: $base-font-family; padding-bottom: 20px; }
+ p { text-align: left; font-size: 18px; font-family: $base-font-family;} p, a { color: #8C9595; }
  hr { height: 0; background: none; border: none; border-bottom: 1px solid #ddd; margin: 10px 0; }
  li { font-size: 18px }
 
@@ -18,7 +18,7 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
-    color: #8C9595;
+    color: #4A4E4E;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -33,6 +33,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+    font-family: $base-font-family;
 }
 
 

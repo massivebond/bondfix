@@ -1,7 +1,10 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
 /**
  * Site header
  */
 .site-header {
+    font-family: $base-font-family;
     border-bottom: 1px solid $grey-color;
     min-height: 56px;
     margin-bottom: 55px;
@@ -10,6 +13,7 @@
 }
 
 .site-title {
+    font-family: $base-font-family;
     color: #8C9595;
     font-size: 26px;
     line-height: 56px;
@@ -118,25 +122,26 @@ a:hover { color:#000; }
  	width: 100%;
  }
 
- #topbar h1 { text-align: left; margin: auto; font-family: Droid Sans; font-size: 30px; }
- #topbar h2 { margin-top: -10px; font-family: Droid Sans; font-size: 22px; }
+ #topbar h1 { text-align: left; margin: auto; font-family: $base-font-family; font-size: 30px; }
+ #topbar h2 { margin-top: -10px;  font-family: $base-font-family; font-size: 21px; }
 
  #restitle {
- 	font-family: Droid Sans;
+ 	font-family: $base-font-family;
  	margin-bottom: 15px;
  }
 
- #restitle h2 { margin: auto; font-family: Droid Sans; font-size: 35px; color: #4A4E4E; }
- #restitle p {  text-align: left; margin: auto; font-family: Droid+Sans; font-size: 25px; }
+ #restitle h2 { margin: auto;  font-family: $base-font-family; font-size: 35px; color: #4A4E4E; }
+ #restitle p {  text-align: left; margin: auto; font-family: $base-font-family; font-size: 25px; }
 
- #job p { text-align: left; margin: auto; font-family: Droid+Sans; }
- #job h2 { font-size: 25px; min-width: 500px; color: #6C7070; }
- #job h3 { font-weight: bold; font-size: 18px; display: inline; color: #6C7070; white-space: nowrap }
- #job span { float: right; font-size: 25px; color: #6C7070; }
+ #job p { text-align: left; margin: auto;  font-family: $base-font-family; }
+ #job h2 { font-size: 25px; min-width: 500px; color: #6C7070;  font-family: $base-font-family; }
+ #job h3 { font-weight: bold; font-size: 18px; display: inline; color: #6C7070; white-space: nowrap; font-family: $base-font-family; }
+ #job span { float: right; font-size: 25px; color: #6C7070; font-family: $base-font-family; }
 
 
 .page-heading {
-    font-size: 20px;
+   font-size: 20px;
+   font-family: $base-font-family;
 }
 
 .post-list {
@@ -196,7 +201,7 @@ a:hover { color:#000; }
 .soc ul {
 	height: 50px;
 	line-height: -55px;
-    list-style:none;
+  list-style:none;
 	float: left;
 }
 
@@ -206,58 +211,17 @@ a:hover { color:#000; }
     zoom:1;
 }
 
-.soc li a {
-    font-family:si!important;
-    font-style:normal;
-    font-weight:400;
-    transition:.1s;
-    transition-property: transform;
-    transform: translateZ(0);
+@import url('http://weloveiconfonts.com/api/?family=entypo');
 
-    overflow:hidden;
-    text-decoration:none;
-    text-align:center;
-    display:block;
-    position: relative;
-    z-index: 1;
-    width: 45px;
-    height: 45px;
-    line-height: 50px;
-    font-size: 25px;
-    border-radius: 15px;
-    margin: 12px;
-    color: #e3e3e3;
-    background-color: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.soc a:hover {
-    z-index: 2;
-    transform: scale(1.1);
+body {
+  background: #fff;
 }
-
-.soc-icon-last{
-    margin:0 !important;
-}
-.soc-facebook {
-    background-color: #3e5b98;
-}
-.soc-facebook:before {
-    content:'b';
-}
-.soc-google {
-    background-color: #d93e2d;
-}
-.soc-google:before {
-    content:'c';
-}
-.soc-linkedin {
-    background-color: #3371b7;
-}
-.soc-linkedin:before {
-    content:'j';
-}
-
-footer{position:absolute;left:0;bottom:0;width:100%}
 
 #para{
 text-align: center;
@@ -266,4 +230,97 @@ display: inline-block;
 min-width: 200px;
 white-space: nowrap;
 margin-left: 30px;
+}
+
+/** SOCIAL **/
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.me {
+  width: 250px;
+  margin: 90px auto;
+}
+.me p,
+.me h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+}
+.me p {
+  font-weight: 200;
+}
+.me span {
+  font-weight: bold;
+}
+.social {
+  position: fixed;
+  float: right;
+  top: 10%;
+}
+.social ul {
+  padding: 2px;
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 160px;
+  text-align: right;
+  padding: 8px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(50px, 0);
+  -moz-transform: translate(50px, 0);
+  -ms-transform: translate(50px, 0);
+  -o-transform: translate(50px, 0);
+  transform: translate(35px, 0);
+  background: rgba(0, 0, 0, 1);
+  font-color: #fff;
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  margin-right: 5px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  background: #fff;
+  padding: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background: #ffffff;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
 }
