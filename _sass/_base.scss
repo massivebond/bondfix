@@ -23,7 +23,11 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -33,6 +37,7 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     font-family: $base-font-family;
+color: #4A4E4E;
 }
 
 
@@ -74,19 +79,12 @@ li {
     }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
-
-
-/** 
-  * Links
-  */
 
 /**
  * Blockquotes

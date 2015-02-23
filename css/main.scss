@@ -27,7 +27,15 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background: #fff;
+}
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
