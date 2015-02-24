@@ -25,86 +25,78 @@
 a:hover { color:#8C9595; }
 
 .site-nav {
-    font-size: 26px;
-    float: right;
-    line-height: 56px;
-    .menu-icon {
-        display: none;
+font-size: 26px;
+float: right;
+line-height: 56px;
+.menu-icon {
+display: none;
 }
-
-    .page-link {
-    text-decoration: none;
-    transition:1s;
-    color: #4A4E4E;
-    line-height: $base-line-height;
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-    
-    a:hover { color:#8C9595; }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
-
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+.page-link {
+text-decoration: none;
+transition:1s;
+color: $text-color;
+line-height: $base-line-height;
+// Gaps between nav items, but not on the first one
+&:not(:first-child) {
+margin-left: 20px;
 }
-
+}
+a:hover { color:#000; }
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+position: absolute;
+top: 9px;
+right: 30px;
+background-color: $background-color;
+border: 1px solid $grey-color-light;
+border-radius: 5px;
+text-align: right;
+.menu-icon {
+display: block;
+float: right;
+width: 36px;
+height: 26px;
+line-height: 0;
+padding-top: 10px;
+text-align: center;
+> svg {
+width: 18px;
+height: 15px;
+path {
+fill: $grey-color-dark;
+}
+}
+}
+.trigger {
+clear: both;
+display: none;
+}
+&:hover .trigger {
+display: block;
+padding-bottom: 5px;
+}
+.page-link {
+display: block;
+padding: 5px 10px;
+}
+}
+}
+@include media-query($on-laptop) {
+.footer-col-1,
+.footer-col-2 {
+width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+width: calc(50% - (#{$spacing-unit} / 2));
+}
+.footer-col-3 {
+width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+width: calc(100% - (#{$spacing-unit} / 2));
+}
+}
+@include media-query($on-palm) {
+.footer-col {
+float: none;
+width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+width: calc(100% - (#{$spacing-unit} / 2));
+}
 }
 
 /**
