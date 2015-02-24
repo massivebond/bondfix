@@ -15,14 +15,6 @@ html {
   background: #fff;
   padding: 10px; }
 
-body {
-  background: #fff;
-  padding: 10px;
-  margin: 0 auto;
-  max-width: 950px;
-  border-radius: 8px;
-  font-family: Droid Sans; }
-
 h1, p {
   text-align: center;
   font-family: Droid Sans;
@@ -50,6 +42,7 @@ li {
  * Basic styling
  */
 body {
+  margin: 25px;
   font-family: Droid Sans;
   font-size: 16px;
   line-height: 1.5;
@@ -172,14 +165,12 @@ pre {
  * Site header
  */
 .site-header {
-  font-family: Droid Sans;
   border-bottom: 1px solid #828282;
   min-height: 56px;
   margin-bottom: 55px;
   position: relative; }
 
 .site-title {
-  font-family: Droid Sans;
   color: #4A4E4E;
   font-size: 26px;
   line-height: 56px;
@@ -224,20 +215,17 @@ a:hover {
         line-height: 0;
         padding-top: 10px;
         text-align: center; }
-        .site-nav .menu-icon > svg {
-          width: 18px;
-          height: 15px; }
-          .site-nav .menu-icon > svg path {
-            fill: #424242; }
-      .site-nav .trigger {
-        clear: both;
-        display: none; }
-      .site-nav:hover .trigger {
-        display: block;
-        padding-bottom: 5px; }
-      .site-nav .page-link {
-        display: block;
-        padding: 5px 10px; } }
+        .site-nav .menu-icon path {
+          fill: #424242; } }
+  .site-nav .trigger {
+    clear: both;
+    display: none; }
+  .site-nav:hover .trigger {
+    display: block;
+    padding-bottom: 5px; }
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px; }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -263,16 +251,13 @@ a:hover {
 #topbar h1 {
   text-align: left;
   margin: auto;
-  font-family: Droid Sans;
   font-size: 30px; }
 
 #topbar h2 {
   margin-top: -10px;
-  font-family: Droid Sans;
   font-size: 21px; }
 
 #restitle {
-  font-family: Droid Sans;
   margin-bottom: 15px; }
 
 #spacer {
@@ -285,14 +270,12 @@ a:hover {
 
 #restitle h2 {
   margin: auto;
-  font-family: Droid Sans;
   font-size: 35px;
   color: #4A4E4E; }
 
 #restitle p {
   text-align: left;
   margin: auto;
-  font-family: Droid Sans;
   font-size: 25px; }
 
 #job {
@@ -300,32 +283,27 @@ a:hover {
 
 #job p {
   text-align: left;
-  margin: auto;
-  font-family: Droid Sans; }
+  margin: auto; }
 
 #job h2 {
   font-size: 25px;
   min-width: 500px;
-  color: #6C7070;
-  font-family: Droid Sans; }
+  color: #6C7070; }
 
 #job h3 {
   font-weight: bold;
   font-size: 18px;
   display: inline;
   color: #6C7070;
-  white-space: nowrap;
-  font-family: Droid Sans; }
+  white-space: nowrap; }
 
 #job span {
   float: right;
   font-size: 25px;
-  color: #6C7070;
-  font-family: Droid Sans; }
+  color: #6C7070; }
 
 .page-heading {
-  font-size: 20px;
-  font-family: Droid Sans; }
+  font-size: 20px; }
 
 .post-list {
   margin-left: 0;
@@ -398,14 +376,14 @@ a:hover {
 .facebook {
   display: inline-block;
   background-image: url("http://i57.tinypic.com/30ws4fo.png");
+  text-indent: -9999px;
   height: 30px;
   width: 30px;
   margin: 5px;
   transition: all ease 0.3s; }
 
 .facebook:hover {
-  background-position: 0px -30px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.8); }
+  background-position: 0px -30px; }
 
 .google {
   display: inline-block;
@@ -413,15 +391,11 @@ a:hover {
   height: 30px;
   width: 30px;
   margin: 5px;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-  transition: all ease 0.3s; }
+  transition: all ease 0.3s;
+  text-indent: -9999px; }
 
 .google:hover {
-  background-position: 0px -30px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.8); }
+  background-position: 0px -30px; }
 
 .linkedin {
   display: inline-block;
@@ -429,21 +403,34 @@ a:hover {
   height: 30px;
   width: 30px;
   margin: 5px;
-  -webkit-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -ms-transition: all ease 0.3s;
-  transition: all ease 0.3s; }
+  transition: all ease 0.3s;
+  text-indent: -9999px; }
 
 .linkedin:hover {
-  background-position: 0px -30px;
-  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.8); }
+  background-position: 0px -30px; }
 
 .socialcon {
   margin-left: auto;
   margin-right: auto;
-  width: 304px;
   text-align: center; }
+
+.socialcon li {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline;
+  margin: 2px;
+  list-style-type: none; }
+
+.socialcon a {
+  line-height: 0;
+  font-size: 0;
+  color: transparent; }
+
+#liskills {
+  font-size: 22px; }
+
+#liskills li {
+  margin-left: 20px; }
 
 /**
  * Syntax highlighting styles
