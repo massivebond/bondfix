@@ -66,6 +66,9 @@ ul, ol, dl, figure,
   font-family: Droid Sans;
   color: #4A4E4E; }
 
+p {
+  text-align: center; }
+
 /**
  * Images
  */
