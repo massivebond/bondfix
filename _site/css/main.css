@@ -42,7 +42,7 @@ li {
  * Basic styling
  */
 body {
-  margin: 25px;
+  margin: 5px;
   font-family: Droid Sans;
   font-size: 16px;
   line-height: 1.5;
@@ -96,7 +96,7 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h5, h6 {
-  font-weight: 300; }
+  font-weight: 200; }
 
 h4 {
   font-style: bold;
@@ -174,7 +174,7 @@ pre {
 .site-header {
   border-bottom: 1px solid #828282;
   min-height: 56px;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   position: relative; }
 
 .site-title {
@@ -199,7 +199,7 @@ a:hover {
   .site-nav .page-link {
     text-decoration: none;
     transition: 1s;
-    color: #8c9595;
+    color: #6C7070;
     line-height: 1.5; }
     .site-nav .page-link:not(:first-child) {
       margin-left: 20px; }
@@ -254,6 +254,22 @@ a:hover {
 /**
  * Page content
  */
+#pic {
+  float: right;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 5px;
+  border: 1px solid black; }
+
+#span {
+  margin-left: 15px;
+  font-weight: normal; }
+
+#abcat {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal; }
+
 #topbar {
   font-size: 14px;
   width: 100%; }
@@ -280,7 +296,7 @@ a:hover {
 
 #restitle h2 {
   margin: auto;
-  font-size: 35px;
+  font-size: 30px;
   color: #4A4E4E; }
 
 #restitle p {
@@ -289,7 +305,8 @@ a:hover {
   font-size: 25px; }
 
 #job {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-left: 35px; }
 
 #job p {
   text-align: left;
@@ -298,14 +315,18 @@ a:hover {
 #job h2 {
   font-size: 25px;
   min-width: 500px;
-  color: #6C7070; }
+  color: #6C7000; }
 
 #job h3 {
   font-weight: bold;
   font-size: 18px;
   display: inline;
   color: #6C7070;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-left: 15px; }
+
+#job h4 {
+  margin-left: 15px; }
 
 #job span {
   float: right;
@@ -345,6 +366,7 @@ a:hover {
     font-family: si;
     src: url(PATH_TO/socicon.svg) format(svg); } }
 #liskills {
+  color: #6C7000;
   margin-left: 35px;
   margin-bottom: 15px; }
 
@@ -383,18 +405,6 @@ a:hover {
   margin-right: auto; }
 
 /** SOCIAL **/
-.facebook {
-  display: inline-block;
-  background-image: url("http://i57.tinypic.com/30ws4fo.png");
-  text-indent: -9999px;
-  height: 30px;
-  width: 30px;
-  margin: 5px;
-  transition: all ease 0.3s; }
-
-.facebook:hover {
-  background-position: 0px -30px; }
-
 .google {
   display: inline-block;
   background-image: url("http://i61.tinypic.com/15z31tx.png");
@@ -420,12 +430,9 @@ a:hover {
   background-position: 0px -30px; }
 
 .socialcon {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
+  float: right; }
 
 .socialcon li {
-  white-space: nowrap;
   overflow: hidden;
   display: inline;
   margin: 2px;
@@ -441,6 +448,9 @@ a:hover {
 
 #liskills li {
   margin-left: 20px; }
+
+#about_sec {
+  font-size: 20px; }
 
 /**
  * Syntax highlighting styles

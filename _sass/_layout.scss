@@ -6,7 +6,7 @@
 .site-header {
     border-bottom: 1px solid $grey-color;
     min-height: 56px;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -34,7 +34,7 @@ display: none;
 .page-link {
 text-decoration: none;
 transition:1s;
-color: $text-color;
+color: #6C7070;
 line-height: $base-line-height;
 // Gaps between nav items, but not on the first one
 &:not(:first-child) {
@@ -103,6 +103,25 @@ width: calc(100% - (#{$spacing-unit} / 2));
  * Page content
  */
 
+ #pic {
+   float: right;
+   margin-bottom: 30px;
+   margin-left: 30px;
+   margin-right: 5px;
+   border: 1px solid black;
+ }
+
+#span {
+  margin-left: 15px;
+  font-weight: normal;
+}
+
+#abcat {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+}
+
  #topbar { 
  	font-size: 14px;
  	width: 100%;
@@ -124,16 +143,18 @@ width: calc(100% - (#{$spacing-unit} / 2));
 	width: 25px;
  }
 
- #restitle h2 { margin: auto; font-size: 35px; color: #4A4E4E; }
+ #restitle h2 { margin: auto; font-size: 30px; color: #4A4E4E; }
  #restitle p {  text-align: left; margin: auto; font-size: 25px; }
 
  #job {
   margin-bottom: 15px;
+  margin-left: 35px;
  }
 
  #job p { text-align: left; margin: auto; }
- #job h2 { font-size: 25px; min-width: 500px; color: #6C7070; }
- #job h3 { font-weight: bold; font-size: 18px; display: inline; color: #6C7070; white-space: nowrap; }
+ #job h2 { font-size: 25px; min-width: 500px; color: #6C7000;}
+ #job h3 { font-weight: bold; font-size: 18px; display: inline; color: #6C7070; white-space: nowrap; margin-left: 15px}
+ #job h4 {margin-left: 15px;}
  #job span { float: right; font-size: 25px; color: #6C7070; }
 
 
@@ -187,6 +208,7 @@ width: calc(100% - (#{$spacing-unit} / 2));
 }
 
 #liskills {
+  color: #6C7000;
   margin-left: 35px;
   margin-bottom: 15px;
 }
@@ -264,14 +286,11 @@ margin-right: auto;
 }
 
 .socialcon {  
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  float: right;
+
 }
 
-
 .socialcon li {
-  white-space: nowrap;
   overflow: hidden;
   display: inline;
   margin: 2px;
@@ -292,4 +311,9 @@ margin-right: auto;
 #liskills li
 {
   margin-left: 20px;
+}
+
+#about_sec
+{ 
+  font-size: 20px;
 }
