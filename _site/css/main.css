@@ -322,7 +322,8 @@ pre {
   margin-left: 15px; }
 
 #job h4 {
-  margin-left: 15px; }
+  margin-left: 15px;
+  width: 80%; }
 
 #job span {
   float: right;
