@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------------------
-	General Style
+  General Style
 --------------------------------------------------------------------------*/
 body {
   background: url(../img/page-background.png);
@@ -75,7 +75,7 @@ div[class*="span"] {
   transition: all .4s linear;
 }
 /*--------------------------------------------------------------------------
-	Typography Style
+  Typography Style
 --------------------------------------------------------------------------*/
 .subt {
   padding-top: 2px;
@@ -176,7 +176,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------------------
-+	Video Wrapper Style
++ Video Wrapper Style
 --------------------------------------------------------------------------*/
 .video-wrapper {
   -webkit-box-shadow: 0 0 5px #000;
@@ -186,7 +186,7 @@ a:hover {
   margin: 20px 0;
 }
 /*--------------------------------------------------------------------------
-+	News Style
++ News Style
 --------------------------------------------------------------------------*/
 .featured-news .caption,
 .latest-news .caption {
@@ -485,7 +485,7 @@ span.color-red {
   font-weight: 400;
 }
 /*--------------------------------------------------------------------------
-+	Breadcrumbs Section Style
++ Breadcrumbs Section Style
 --------------------------------------------------------------------------*/
 .section-breadcrumbs {
   background: #222;
@@ -500,7 +500,7 @@ span.color-red {
   margin-bottom: 0;
 }
 /*--------------------------------------------------------------------------
-	Footer Style
+  Footer Style
 --------------------------------------------------------------------------*/
 .footer {
   background: #222;
@@ -514,7 +514,7 @@ span.color-red {
   color: 0 -1px 12px rgba(0,0,0,0.4);
 }
 /*--------------------------------------------------------------------------
-+	Pagination Style (overrides Bootstrap style)
++ Pagination Style (overrides Bootstrap style)
 --------------------------------------------------------------------------*/
 .pagination-wrapper {
   margin-top: 15px;
@@ -560,7 +560,7 @@ span.color-red {
   cursor: default;
 }
 /*--------------------------------------------------------------------------
-+	Custom Style for Maps
++ Custom Style for Maps
 --------------------------------------------------------------------------*/
 .leaflet-popup-content-wrapper {
   -webkit-border-radius: 5px;
@@ -571,7 +571,7 @@ span.color-red {
   background-clip: padding-box;
 }
 /*--------------------------------------------------------------------------
-+	Custom Style for Tabs (overrides Bootstrap)
++ Custom Style for Tabs (overrides Bootstrap)
 --------------------------------------------------------------------------*/
 .nav-tabs > li > a {
   font-size: 1.1em;
@@ -654,7 +654,7 @@ span.color-red {
   }
 }
 /*--------------------------------------------------------------------------
-+	Main Menu Style
++ Main Menu Style
 --------------------------------------------------------------------------*/
 .bondfix {
   font-family: 'Source Sans Pro', sans-serif;
@@ -856,7 +856,7 @@ span.color-red {
   }
 }
 /*--------------------------------------------------------------------------
-+	Buttons Style
++ Buttons Style
 --------------------------------------------------------------------------*/
 .btn {
   border: 1px solid #4f8db3;
