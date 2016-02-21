@@ -4,9 +4,6 @@
 body {
   background: url(../img/page-background.png);
 }
-
-
-
 .section {
   padding: 30px 0;
   -webkit-transform: translateZ(0);
@@ -78,12 +75,7 @@ a {
 a:hover {
   color: #2f556d;
 }
-/* Multicolumn */
-/* Row */
 
-/*--------------------------------------------------------------------------
-+ Video Wrapper Style
---------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------
 + News Style
 --------------------------------------------------------------------------*/
@@ -187,7 +179,7 @@ a:hover {
 /*--------------------------------------------------------------------------
 + Pagination Style (overrides Bootstrap style)
 --------------------------------------------------------------------------*/
-Ó.pagination > .active > a,
+.pagination > .active > a,
 .pagination > .active > span {
   color: #666666;
   border-bottom: 3px solid #4f8db3;
