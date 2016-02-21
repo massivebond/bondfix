@@ -29,16 +29,6 @@ textarea:focus {
 /*--------------------------------------------------------------------------
   Typography Style
 --------------------------------------------------------------------------*/
-.subt {
-  padding-top: 2px;
-  color: #ccd9ff; 
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px; 
-  font-weight: normal; 
-  opacity: 0.5;
-  margin: 0px;
-}
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
@@ -74,6 +64,16 @@ a {
 }
 a:hover {
   color: #2f556d;
+}
+.subt {
+  padding-top: 2px;
+  padding-left: 15px;
+  color: #ccd9ff; 
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px; 
+  font-weight: normal; 
+  opacity: 0.5;
+  margin: 0px;
 }
 
 /*--------------------------------------------------------------------------
