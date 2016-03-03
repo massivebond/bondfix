@@ -202,16 +202,20 @@ a:hover {
 + Main Menu Style
 --------------------------------------------------------------------------*/
 .bondfix {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
   white-space: nowrap;
+  padding: 20px;
+  padding-right: 10%;
   display: inline-block;
-  padding: .2em 2em;
-  margin-top: 5px;
-  color: #999;
+  padding-bottom: 2px;
+  padding-top: 5px;
   text-decoration: none;
-}
+  color: #4f8db3;
+  text-shadow: 1px 2px 2px #bfbfbf;
 
+
+}
 
 .mainmenu {
   width: 100%;
@@ -248,18 +252,17 @@ a:hover {
     -moz-animation-iteration-count: 1;
     -moz-animation-timing-function: ease-in;
     -moz-animation-duration: 0.5s;
-
     -webkit-animation-name: fadein;
     -webkit-animation-iteration-count: 1;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-duration: 0.5s;
-
     animation-name: fadein;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
   color: #fff;
   background: #4f8db3;
+box-shadow: 2px 2px 2px #999999;
 }
 .mainmenu .mainmenu-submenu-inner:after {
   clear: both;
@@ -293,10 +296,6 @@ a:hover {
     color: #FAFAFA;
     font-size: 25px;
     margin-bottom: 0;
-  }
-  .bondfix {
-    text-align: center;
-    padding: 10px;
   }
   .mainmenu {
     font-size: 120%;
